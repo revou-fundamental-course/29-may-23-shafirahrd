@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RevoU SE-CS Portfolio Website</title>
+
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body onload="inputName()">
+        <header class="header-wrapper">
+            <img class="logo" src="img/logo.png" class="logo" width="40" height="40"/>
+            <div class="menu">
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button onclick="window.location.href='profile.html'">Our Profile</button>
+                <button>Portofolio</button>
+                <button onclick="window.location.href='messageus.html'">Message Us</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="greeting-section">
+                <img src="img/photo_banner.jpg" />
+                <div class="greeting">
+                    <p>Hi <span id="nama">User</span>, Welcome to Website</p>
+                    <p>Ini adalah website latihan pertama</p>
+                </div>
+            </div>
+
+            <div class="headquarter-section">
+                <h2>Our Headquarter</h2>
+                <div class="headquearter">
+                    <div>
+                        <img src="img/hq_jakarta.jpg" />
+                        <center><p>Jakarta</p></center>
+                    </div>
+                    <div>
+                        <img src="img/hq_bandung.jpg" />
+                        <center><p>Bandung</p></center>
+                    </div>
+                    <div>
+                        <img src="img/hq_surabaya.jpg" />
+                        <center><p>Surabaya</p></center>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-wrapper">
+            <p>Created by RevoU</p>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
 </html>
