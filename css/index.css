@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: "UD Digi KyoKasho NK-R", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vw;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
+}
+
+.header-wrapper > .menu {
+    display: flex;
+}
+
+.header-wrapper > .menu > button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.header-wrapper > .menu > button:hover {
+    background-color: gainsboro;
+}
+
+.header-wrapper > .menu > button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper > .menu > button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper > .logo {
+    width: auto;
+    height: 40px;
+}
+
+.main-content .greeting-section {
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.main-content .greeting-section > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.greeting-section .greeting {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    padding: 50px;
+}
+
+.greeting-section .greeting > p:first-child {
+    font-size: xx-large;
+}
+
+.main-content .headquarter-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 100px;
+    border-bottom: 2px solid black;
+}
+
+.headquarter-section .headquearter {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.headquarter-section .headquearter > div {
+    padding: 30px;
+}
+
+.headquarter-section .headquearter img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.main-content .message-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 20px 100px;
+}
+
+.message-section .message-us {
+    display: flex;
+    flex-direction: row;
+}
+
+.message-section .message-us input[type=text],
+.message-section .message-us input[type=date],
+.message-section .message-us textarea {
+    width: 100%;
+}
+
+.message-section .message-us button {
+    width: 100%;
+    height: 30px;
+}
+
+.message-section .form-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    width: 500px;
+}
+
+.message-section .form-output > p {
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+.message-section .form-output > p > span {
+    font-weight: lighter;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 16px 24px;
+}
+
+
+/* extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        font-size: small;
+    }
+    
+    body h2 {
+        font-size: large;
+    }
+
+	.header-wrapper {
+		flex-direction: column;
+	}
+
+	.header-wrapper > .menu {
+		width: 100%;
+		flex-direction: column;
+	}
+
+    .header-wrapper > .menu > button:first-child {
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .header-wrapper > .menu > button:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+	
+	.header-wrapper > .logo {
+		margin-bottom: 14px;
+	}
+
+    .main-content .greeting-section {
+        height: auto;
+    }
+    
+    .main-content .greeting {
+        padding: 0;
+        left: 20px;
+        width: 40%;
+    }
+
+    .greeting-section .greeting > p:first-child {
+        font-size: large;
+    }
+
+    .main-content .headquarter-section {
+        padding: 20px;
+        align-items: center;
+    }
+
+    .headquarter-section .headquearter img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .headquarter-section .headquearter > div {
+        padding: 10px;
+    }
+
+    .main-content .message-section {
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .message-section .message-us {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .message-section .form-output {
+        margin-top: 50px;
+        width: auto;
+    }
+}
+
+/* tablet landscape (between 600px-768px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .main-content .greeting {
+        width: 35%;
+    }
+    
+    .headquarter-section .headquearter img {
+        width: 125px;
+        height: 125px;
+    }
+    
+    .message-section .form-output {
+        margin-left: 50px;
+    }
+
+}
+
+/* desktop (above 768px) */
+@media only screen and (min-width: 993px) {
+    .message-section .form-output {
+        margin-left: 150px;
+    }
+}
