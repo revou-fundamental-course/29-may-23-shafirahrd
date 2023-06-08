@@ -68,7 +68,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 0 20px 100px;
-    border-bottom: 2px solid black;
 }
 
 .headquarter-section .headquearter {
@@ -90,41 +89,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 50px 20px 100px;
-}
-
-.message-section .message-us {
-    display: flex;
-    flex-direction: row;
-}
-
-.message-section .message-us input[type=text],
-.message-section .message-us input[type=date],
-.message-section .message-us textarea {
-    width: 100%;
-}
-
-.message-section .message-us button {
-    width: 100%;
-    height: 30px;
-}
-
-.message-section .form-output {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-    width: 500px;
-}
-
-.message-section .form-output > p {
-    font-weight: bold;
-    margin: 0px;
-    padding: 0px;
-}
-
-.message-section .form-output > p > span {
-    font-weight: lighter;
 }
 
 .footer-wrapper {
@@ -201,16 +165,6 @@ body {
         padding: 20px;
         align-items: center;
     }
-    
-    .message-section .message-us {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .message-section .form-output {
-        margin-top: 50px;
-        width: auto;
-    }
 }
 
 /* tablet landscape (between 600px-768px) */
@@ -222,17 +176,5 @@ body {
     .headquarter-section .headquearter img {
         width: 125px;
         height: 125px;
-    }
-    
-    .message-section .form-output {
-        margin-left: 50px;
-    }
-
-}
-
-/* desktop (above 768px) */
-@media only screen and (min-width: 993px) {
-    .message-section .form-output {
-        margin-left: 150px;
     }
 }
